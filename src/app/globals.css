@@ -1,0 +1,68 @@
+@import "@fontsource/manrope/400.css";
+@import "@fontsource/manrope/500.css";
+@import "@fontsource/manrope/600.css";
+@import "@fontsource/manrope/700.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-manrope: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+  overflow-x: clip;
+  width: 100%;
+  max-width: 100%;
+}
+
+body {
+  background-color: #163331;
+  color: #F4FFFB;
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: clip;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Background texture pattern applied to all sections */
+.bg-site-pattern {
+  background-color: #163331;
+  background-image: 
+    radial-gradient(circle at 80% 12%, rgba(45, 90, 80, 0.25) 0%, transparent 45%),
+    radial-gradient(circle at 10% 45%, rgba(30, 68, 60, 0.3) 0%, transparent 40%),
+    radial-gradient(circle at 85% 75%, rgba(42, 85, 75, 0.2) 0%, transparent 50%),
+    url('/images/bg-pattern.png');
+  background-repeat: repeat;
+  background-size: auto, auto, auto, 512px 512px;
+}
+
+/* Hide scrollbar for category carousel */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Popular ads image drop shadow */
+.card-image-shadow {
+  box-shadow: 0px -4px 10px 5px rgba(33, 67, 61, 0.15);
+}
+
+/* Image stacking 3D effect */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+* {
+  box-sizing: border-box;
+}
